@@ -80,11 +80,11 @@ def genParam():
     parser.add_argument('--weight_decay', type=float, nargs='?', default=0.0005,
                         help='Initial learning rate for self-attention model.')
     # Architecture params
-    parser.add_argument('--structural_head_config', type=str, nargs='?', default='16,8,8',
+    parser.add_argument('--structural_head_config', type=str, nargs='?', default='16,8,3',
                         help='Encoder layer config: # attention heads in each GAT layer')
     parser.add_argument('--structural_layer_config', type=str, nargs='?', default='128',
                         help='Encoder layer config: # units in each GAT layer')
-    parser.add_argument('--temporal_head_config', type=str, nargs='?', default='16',
+    parser.add_argument('--temporal_head_config', type=str, nargs='?', default='3',
                         help='Encoder layer config: # attention heads in each Temporal layer')
     parser.add_argument('--temporal_layer_config', type=str, nargs='?', default='128',
                         help='Encoder layer config: # units in each Temporal layer')
